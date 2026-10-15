@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Doughnuts</title>
+	<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family+Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<style>
+	@font-face {
+		font-family: CherryBombOne;
+		src: url("CherryBombOne-Regular.ttf")
+	} body {
+		background: whitesmoke;
+	} #container {
+		width: 800px;
+		height: 800px;
+		background: white;
+		border: 1px solid dimgray;
+		margin: 24px auto;
+	} #page {
+		width: 928px;
+		height: 1224px;
+		background: whitesmoke;
+		margin: 0 auto;
+		padding: 48px;
+		border: 1px solid darkgray;
+		box-shadow: 2px 3px 6px darkgray;
+		z-index: 0;
+	} h1 {
+		font: 48px/1.0em 'CherryBombOne', regular;
+		text-align: center;
+		text-color: lightpink;
+		text-shadow: 2px 3px 6px lightpink;
+	} main {
+		width: 768px;
+		height: 768px;
+		border: 1px dashed gray;
+		margin: 24px auto;
+		display: grid;
+		grid-template: repeat(3,256px) / repeat(2,384px)
+	} #banner-img {
+		width: 100%
+	}
+</style>
+</head>
+
+<body>
+<div id="page">
+	<header>
+		<a href="donut_banner.jpg" target="_top"><img src="donut_banner.jpg" width="886" height="199" id="banner-img"></a>
+		<h1>Doughnuts</h1>
+	</header>
+	
+	<main>
+		<img src="purple_donuts_small.jpg" />
+		<img src="powdered_donuts_small.jpg" />
+		<img src="donut2_small.jpg" />
+		<img style="grid-area: 1/2/4/3" src="falling_donuts_small.jpg" />
+	</main>
+</div>
+</body>
+</html>
